@@ -216,7 +216,7 @@ describe "NYC Pigeon Organizer" do
           expect(@lola[:color]).to include("black")
         end
         it "knows Alex is male" do
-           binding.pry
+          # binding.pry
           expect(@lola[:gender].length).to eq(1)
           expect(@lola[:gender]).to include("female")
         end
