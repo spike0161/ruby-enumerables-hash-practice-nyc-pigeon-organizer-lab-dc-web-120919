@@ -21,20 +21,20 @@ def nyc_pigeon_organizer(data)
 
   # How to work through gender, and lives
   
-#     data[:gender].each do |key, value|
+    data[:gender].each do |key, value|
       
-#     value.each do |name|
+    value.each do |name|
       
-#       if solution[name]
-#         # binding.pry
-#         solution[name.to_sym][:gender] << key.to_s
-#       else
-#           solution[name.to_sym] = {
-#             :gender => [key.to_s]
-#         }
-#     end
-# end
-# end
+      if solution[name]
+        # binding.pry
+        solution[name.to_sym][:gender] << key.to_s
+      else
+          solution[name.to_sym] = {
+            :gender => [key.to_s]
+        }
+    end
+end
+end
 
 # data[:lives].each do |key, value|
 #   # binding.pry
