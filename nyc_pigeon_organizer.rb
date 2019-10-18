@@ -52,7 +52,7 @@ data[:lives].each do |key, value|
   end
 end
 end
-  binding.pry
+  # binding.pry
  solution
   
   
