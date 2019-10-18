@@ -43,10 +43,10 @@ data[:lives].each do |key, value|
     
     if solution[name]
       # binding.pry
-      solution[name.to_sym][:lives] << key.to_s
+      solution[name.to_s][:lives] << key.to_s
      
     else
-      solution[name.to_sym] = {
+      solution[name.to_s] = {
         :lives => [key.to_s]
       }
       
