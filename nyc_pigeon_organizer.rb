@@ -27,7 +27,7 @@ def nyc_pigeon_organizer(data)
       
       if solution[name]
         
-        solution[name][:gender] << key.to_s
+        solution[name.to_s][:gender] << key.to_s
       else
           solution[name.to_sym] = {
             :gender => [key.to_s]
