@@ -8,7 +8,7 @@ def nyc_pigeon_organizer(data)
     value.each do |name|
       # If pigeon name exists in solution, add the color to their colors, else add a new hash for that pigeon
        
-      if solution[name]
+      if solution[name.to_s]
       # binding.pry
         solution[name.to_s][:color] << key.to_s
       else
