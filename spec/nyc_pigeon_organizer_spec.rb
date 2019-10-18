@@ -31,6 +31,7 @@ describe "NYC Pigeon Organizer" do
         expect(@result.class).to eq(Hash)
       end
       it "returns a hash with seven keys" do
+        binding.pry
         expect(@result.keys.length).to eq(7)
       end
       it 'has the keys Theo, Peter Jr., Lucky, Ms. K, Queenie, Andrew, and Alex' do
