@@ -19,7 +19,7 @@ def nyc_pigeon_organizer(data)
   end
   end
 
-  How to work through gender, and lives
+  # How to work through gender, and lives
   
     data[:gender].each do |key, value|
       
