@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(data)
       
         solution[name.to_s][:color] << key.to_s
       else
-        solution[name.to_sym] = {
+        solution[name.to_s] = {
           :color => [key.to_s]
         }
       end
