@@ -144,6 +144,7 @@ describe "NYC Pigeon Organizer" do
           expect(@andrew[:gender]).to include("male")
         end
         it "knows Andrew lives in city hall" do
+          binding.pry
           expect(@andrew[:lives].length).to eq(1)
           expect(@andrew[:lives]).to include("City Hall")
         end
