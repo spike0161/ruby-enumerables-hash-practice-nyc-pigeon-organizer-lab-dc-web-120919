@@ -3,21 +3,21 @@ require 'pry'
 def nyc_pigeon_organizer(data)
   solution = {}
   
-  # data[:color].each do |key, value|
+  data[:color].each do |key, value|
     
-  #   value.each do |name|
-  #     # If pigeon name exists in solution, add the color to their colors, else add a new hash for that pigeon
+    value.each do |name|
+      # If pigeon name exists in solution, add the color to their colors, else add a new hash for that pigeon
        
-  #     if solution[name.to_s]
-  #     # binding.pry
-  #       solution[name.to_s][:color] << key.to_s
-  #     else
-  #       solution[name.to_s] = {
-  #         :color => [key.to_s]
-  #       }
-  #     end
-  # end
-  # end
+      if solution[name.to_s]
+      # binding.pry
+        solution[name.to_s][:color] << key.to_s
+      else
+        solution[name.to_s] = {
+          :color => [key.to_s]
+        }
+      end
+  end
+  end
 
   # How to work through gender, and lives
   
