@@ -8,15 +8,15 @@ def nyc_pigeon_organizer(data)
     value.each do |name|
       # If pigeon name exists in solution, add the color to their colors, else add a new hash for that pigeon
        
-      if solution[name.to_sym]
+      if solution[name.to_s]
       # binding.pry
-        solution[name.to_sym][:color] << key.to_s
+        solution[name.to_s][:color] << key.to_s
       else
-        solution[name.to_sym] = {
+        solution[name.to_s] = {
           :color => [key.to_s]
         }
       end
-   end
+  end
   end
 
   # How to work through gender, and lives
@@ -26,10 +26,11 @@ def nyc_pigeon_organizer(data)
     value.each do |name|
       
       if solution[name]
-        
-        solution[name.to_sym][:gender] << key.to_s
+        # binding.pry
+        solution[name.to_s][:gender] = []
+        solution[name.to_s][:gender] << key.to_s
       else
-          solution[name.to_sym] = {
+          solution[name.to_s] = {
             :gender => [key.to_s]
         }
     end
@@ -42,18 +43,19 @@ data[:lives].each do |key, value|
   value.each do |name|
     
     if solution[name]
-      
-      solution[name.to_sym][:lives] << key.to_s
-      
+      solution[name.to_s][:lives] = []
+      solution[name.to_s][:lives] << key.to_s
+     
     else
-      solution[name.to_sym] = {
+      solution[name.to_s] = {
         :lives => [key.to_s]
       }
+      
   end
 end
 end
-  binding.pry
- solution
+  # binding.pry
+ return solution
   
   
   # return {:Theo => {

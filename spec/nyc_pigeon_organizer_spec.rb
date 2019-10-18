@@ -31,6 +31,7 @@ describe "NYC Pigeon Organizer" do
         expect(@result.class).to eq(Hash)
       end
       it "returns a hash with seven keys" do
+        # binding.pry
         expect(@result.keys.length).to eq(7)
       end
       it 'has the keys Theo, Peter Jr., Lucky, Ms. K, Queenie, Andrew, and Alex' do
@@ -144,6 +145,7 @@ describe "NYC Pigeon Organizer" do
           expect(@andrew[:gender]).to include("male")
         end
         it "knows Andrew lives in city hall" do
+          # binding.pry
           expect(@andrew[:lives].length).to eq(1)
           expect(@andrew[:lives]).to include("City Hall")
         end
@@ -215,6 +217,7 @@ describe "NYC Pigeon Organizer" do
           expect(@lola[:color]).to include("black")
         end
         it "knows Alex is male" do
+          # binding.pry
           expect(@lola[:gender].length).to eq(1)
           expect(@lola[:gender]).to include("female")
         end
