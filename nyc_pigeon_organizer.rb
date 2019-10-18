@@ -25,11 +25,11 @@ def nyc_pigeon_organizer(data)
       
     value.each do |name|
       
-      if solution[name]
+      if solution[name.to_sym]
         # binding.pry
         solution[name.to_s][:gender] << key.to_s
       else
-          solution[name.to_sym] = {
+          solution[name.to_s] = {
             :gender => [key.to_s]
         }
     end
