@@ -43,7 +43,7 @@ data[:lives].each do |key, value|
   value.each do |name|
     
     if solution[name]
-      
+      solution[name.to_s][:lives] = []
       solution[name.to_s][:lives] << key.to_s
      
     else
