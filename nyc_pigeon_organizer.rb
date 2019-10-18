@@ -44,11 +44,12 @@ data[:lives].each do |key, value|
     if solution[name]
       
       solution[name.to_sym][:lives] << key.to_s
-      binding.pry
+     
     else
       solution[name.to_sym] = {
         :lives => [key.to_s]
       }
+       binding.pry
   end
 end
 end
