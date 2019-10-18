@@ -36,23 +36,23 @@ def nyc_pigeon_organizer(data)
 end
 end
 
-data[:lives].each do |key, value|
-  # binding.pry
+# data[:lives].each do |key, value|
+#   # binding.pry
   
-  value.each do |name|
+#   value.each do |name|
     
-    if solution[name]
+#     if solution[name]
       
-      solution[name.to_s][:lives] << key.to_s
+#       solution[name.to_s][:lives] << key.to_s
      
-    else
-      solution[name.to_s] = {
-        :lives => [key.to_s]
-      }
+#     else
+#       solution[name.to_s] = {
+#         :lives => [key.to_s]
+#       }
       
-  end
-end
-end
+#   end
+# end
+# end
   # binding.pry
  solution
   
