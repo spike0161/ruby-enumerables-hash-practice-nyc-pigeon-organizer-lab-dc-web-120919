@@ -10,7 +10,7 @@ def nyc_pigeon_organizer(data)
         binding.pry
       if solution[name]
       
-        solution[name.to_sym][:color] << key.to_s
+        solution[name.to_s][:color] << key.to_s
       else
         solution[name.to_sym] = {
           :color => [key.to_s]
